@@ -1,8 +1,18 @@
-/* Navbar styles */
+/* Nav-bar styles Starts Here */
 .navbar {
 	background-color: #222;
 	padding: 0.5rem 2rem;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 56px;
+}
+.navbar-center {
+	flex: 1;
+	display: flex;
+	justify-content: center;
 }
 .nav-links {
 	list-style: none;
@@ -20,8 +30,33 @@
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 1.1rem;
-	transition: color 0.2s;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+	transition: background 0.2s, color 0.2s;
 }
 .nav-links a:hover {
-	color: #ff9800;
+	background: #ff9800;
+	color: #222;
 }
+.navbar-right {
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	gap: 1rem;
+}
+.nav-auth {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.1rem;
+	padding: 0.3rem 1rem;
+	border-radius: 4px;
+	transition: background 0.2s, color 0.2s;
+}
+.nav-auth:hover {
+	background: #ff9800;
+	color: #222;
+}
+/* Nav-bar styles Ends Here */
